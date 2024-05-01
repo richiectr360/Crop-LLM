@@ -1,6 +1,12 @@
 # crop-llM
 
 ## Screenshots
+![Screenshot 1](https://github.com/richiectr360/crop-llM/blob/main/photos/1.png?raw=true)
+![Screenshot 2](https://github.com/richiectr360/crop-llM/blob/main/photos/2.png?raw=true)
+![Screenshot 3](https://github.com/richiectr360/crop-llM/blob/main/photos/3.png?raw=true)
+![Screenshot 4](https://github.com/richiectr360/crop-llM/blob/main/photos/4.png?raw=true)
+![Screenshot 5](https://github.com/richiectr360/crop-llM/blob/main/photos/5.png?raw=true)
+![Screenshot 6](https://github.com/richiectr360/crop-llM/blob/main/photos/6.png?raw=true)
 
 ## Workflow
 - Train LSTM based forecasting model on a crop yield dataset
