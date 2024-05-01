@@ -9,7 +9,7 @@
 ![Screenshot 6](https://github.com/richiectr360/crop-llM/blob/main/photos/6.png?raw=true)
 
 ## Workflow
-- Train LSTM based forecasting model on a crop yield dataset!(https://open.canada.ca/data/en/dataset/754a5961-0d27-406c-b5e3-224b6e494e9e/resource/a97f11b2-31f3-469d-a8da-49f0db0a0146)
+- - Train LSTM based forecasting model on a [crop yield dataset](https://open.canada.ca/data/en/dataset/754a5961-0d27-406c-b5e3-224b6e494e9e/resource/a97f11b2-31f3-469d-a8da-49f0db0a0146).
 - Predict the crop yield for the next year for the selected crop type in the selected location
 - Pass the yield history and prediction to LLM via LangChain to get actionable insights
 - Develop frontend using ReactJS
