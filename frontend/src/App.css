@@ -1,0 +1,229 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff; 
+}
+
+.header-image {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.header-text {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.box-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.map-container {
+  flex: 1;
+  max-width: calc(100% - 10px); 
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.map-header {
+  font-size: 1.5em;
+  margin-bottom: 10px; /* Reduced margin for more map space */
+  flex-shrink: 0; /* Ensures this element doesn't shrink */
+}
+
+.controls-container {
+  flex: 1;
+  max-width: calc(100% - 10px);
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.crop-type-text {
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.crop-select {
+  width: 90%; /* Increased width */
+  height: 40px;
+  margin-left: 10px;
+}
+
+.button {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.reset-crop-button {
+  align-self: center;
+  margin: 10px auto;
+  padding: 6px 16px; 
+  max-width: 180px;
+  display: block;
+  color: #fff; 
+  text-align: center;
+  transition: background-color 0.3s ease; 
+}
+
+.reset-crop-button:hover {
+  background-color: #00574b; /* Slightly darker shade for hover effect */
+}
+
+
+.chat-container {
+  flex: 1;
+  max-width: calc(100% - 10px); 
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.chat-header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.chatbot-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 50vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This separates the chat history and the input field */
+}
+
+
+.chat-history {
+  flex: 1;
+  overflow-y: auto;  
+  max-height: 50vh; 
+  margin-bottom: 10px;
+  border-radius: 10px;  
+  padding: 10px;  
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+}
+
+/* Generic styles for both user and bot messages */
+.user-message, .bot-message {
+  border-radius: 15px;
+  padding: 8px 12px;
+  max-width: 70%; 
+  word-wrap: break-word;
+}
+
+/* Styles specific to user messages */
+.user-message {
+  align-self: flex-end;
+  background-color: #DCF8C6;  
+  border-bottom-right-radius: 0;
+  margin-left: 30%; 
+}
+
+/* Styles specific to bot messages */
+.bot-message {
+  align-self: flex-start;
+  background-color: #ECECEC;  
+  border-bottom-left-radius: 0;
+  margin-right: 30%; 
+}
+
+/* Colors for text inside bubbles */
+.user-message span {
+  color: #000;
+  text-align: left;
+  display: block; 
+}
+
+.bot-message span {
+  color: #000;
+  text-align: left;
+  display: block; 
+}
+
+
+.chatbot-container > div:last-child {
+  margin-top: 10px; 
+  gap: 5px; 
+}
+
+.bot-chart-message {
+  display: flex;
+  justify-content: center;
+  padding: 10px; 
+  margin-right: 30%; 
+  width: 100%; 
+}
+
+.bot-selector-message {
+  display: flex;
+  width: 30%; 
+}
+
+@keyframes dotBounce {
+  0%, 20%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+.typing-indicator {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 10px;
+  margin: 5px;
+}
+
+.typing-indicator span {
+  position: absolute;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  background: #000; /* You can change this to fit bot message text color */
+  border-radius: 50%;
+  animation: dotBounce 1.4s infinite;
+}
+
+.typing-indicator span:nth-child(1) {
+  left: 0;
+}
+
+.typing-indicator span:nth-child(2) {
+  left: 10px;
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  left: 20px;
+  animation-delay: 0.4s;
+}
+
